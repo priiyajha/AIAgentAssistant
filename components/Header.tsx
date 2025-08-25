@@ -3,7 +3,7 @@
 import { UserButton } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
-import { NavigationContext } from "@/lib/NavigationProvider";
+import {useNavigation} from "@/lib/NavigationProvider";
 
 export default function Header() {
     const { setIsMobileNavOpen } = useNavigation();

@@ -1,12 +1,11 @@
 import {Doc, Id} from "@/convex/_generated/dataModel";
 import {useRouter} from "next/navigation";
-import { NavigationContext } from "@/lib/NavigationProvider";
 import {useQuery} from "convex/react";
 import {Button} from "@/components/ui/button";
 import {TrashIcon} from "lucide-react";
 import TimeAgo from "react-timeago";
 import {api} from "@/convex/_generated/api";
-
+import {useNavigation} from "@/lib/NavigationProvider";
 function ChatRow({
                      chat,
                      onDelete,

@@ -6,8 +6,9 @@ import { Button } from "@/components/ui/button";
 import { PlusIcon } from "@radix-ui/react-icons";
 import { Id } from "@/convex/_generated/dataModel";
 import { cn } from "@/lib/utils";
-import { NavigationContext } from "@/lib/NavigationProvider";
+
 import ChatRow from "@/components/ChatRow";
+import {useNavigation} from "@/lib/NavigationProvider";
 
 
 
